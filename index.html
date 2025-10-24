@@ -5,28 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand fw-bold " href="#"><img src="assets/img/images/logo-removebg.png"
+                        alt="logo-branch" class="logo-w mb-3"> Rental Vehicles</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto  my-lg-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active " aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Types of Vehicles  <i class="fa-solid fa-angle-down"></i>
+                                Types of Vehicles <i class="fa-solid fa-angle-down"></i>
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -35,20 +38,24 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link me-4" href="#">contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="btn w-100 font-size-18 hover-btn px-4 rounded-5 bg-btn text-white position-relative"
+                                href="#">Book a
+                                Rental
+                                <span
+                                    class="position-absolute badge-top-start border-3 border-white translate-middle bg-danger border border-light rounded-circle"></span>
+                            </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown<i class="fa-solid bg-black fa-angle-down"></i>
+                            <a class="ms-4 me-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/img/images/user/09.jpg" alt="profil" class="photo rounded-circle">
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu ">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Another</a></li>
+                                <li><a class="dropdown-item" href="#">Something</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -56,8 +63,527 @@
             </div>
         </nav>
     </header>
+    <main>
+        <section class="hero-banner w-100 mx-auto magin-10 position-relative">
+            <div class="container-fluid px-5">
+                <div class="hero-opatity position-absolute "></div>
+                <video src="assets/img/images/video/hero-banner.mp4" class="hero-video object-fit-cover w-100  "
+                    autoplay muted loop></video>
+                <div class="hero-title position-absolute top-0 x-index start">
+                    <div class="text-center hero mb-2 ">
+                        <p class="active font-size-18 mb-2"><i class="fa-solid fa-play"></i> Welcome To Car Rent</p>
+                        <h1 class="text-white fw-bold font-size-68 mb-3">Looking to save more on <br> your rental car?
+                        </h1>
+                        <p class="font-size-18 color-text-hero">Whether you’re planning a weekend getaway, a business
+                            trip,
+                            or just need a reliable <br> ride for the day, we offers a wide range of vehicles to suit
+                            your
+                            needs.</p>
+                    </div>
+                    <div class="button text-center">
+                        <a class="btn px-3 font-size-18 rounded-5  bg-btn text-white hover-btn" href="#">Book a
+                            Rental</a>
+                        <a class="btn px-3 font-size-18 rounded-5 ms-3  btn-outline-light " href="#">learn more</a>
+                    </div>
+                </div>
+                <div class=" top position-absolute bg-white d-flex mx-auto shadow-lg rounded-5 pb-lg-4 pb-xl-0 x-index">
+                    <div class="container-fluid">
+                        <div class="row p-3 g-4 x-index">
+                            <div class="col-lg-12 col-xl-2">
+                                <div class="card text-start rounded-5   border-0 ">
+                                    <div class="card-body border-end ">
+                                        <p class="card-text font-size-18 fw-medium text-black">Need to Rent a <br>Luxury
+                                            Car?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div
+                                    class="card text-start rounded-0 bg-transparent border-0 border-end pb-lg-4 pb-xl-0">
+                                    <div class="card-body  ">
+                                        <p class="card-text fs-6 mb-0 text-black">Branch location</p>
+                                        <select name="" id=""
+                                            class="form-select form-select border-0 position-absolute start-0 bg-transparent shadow-none width-select ">
+                                            <option value="">...</option>
+                                            <option value="">kondal</option>
+                                            <option value="">sime read</option>
+                                            <option value="">kom pot</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div
+                                    class="card text-start rounded-0 bg-transparent border-0 border-end pb-lg-4 pb-xl-0">
+                                    <div class="card-body  ">
+                                        <p class="card-text fs-6 mb-0 text-black">Types of Vehicles</p>
+                                        <select name="" id=""
+                                            class="form-select form-select border-0 position-absolute start-0 bg-transparent shadow-none width-select  ">
+                                            <option value="">...</option>
+                                            <option value="">kondal</option>
+                                            <option value="">sime read</option>
+                                            <option value="">kom pot</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 col-xl-2">
+                                <div class="card text-start rounded-0 bg-transparent border-0  pb-lg-4 pb-xl-0">
+                                    <div class="card-body  ">
+                                        <p class="card-text fs-6 mb-0 text-black">Brand of Vehicles</p>
+                                        <select name="" id=""
+                                            class="form-select form-select border-0 position-absolute start-0 bg-transparent shadow-none width-select ">
+                                            <option value="">...</option>
+                                            <option value="">kondal</option>
+                                            <option value="">sime read</option>
+                                            <option value="">kom pot</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn width-btn font-size-18 h-25 m-auto rounded-5 hover-btn bg-btn text-white"
+                                href="#"><i class="fa-solid fa-magnifying-glass"></i> Find Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-light pbb-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card-img position-relative bg-light">
+                            <div class="picture-01 position-absolute bg-light  p-5">
+                                <img src="assets/img/images/citroen-cactus.jpg" alt="picture-1"
+                                    class="picture-1 img-thumbnail p-2  bg-transparent object-fit-cover ">
+                            </div>
+                            <div class="picture-02 position-absolute">
+                                <img src="assets/img/images/citroen-cactus.jpg" alt="picture-2"
+                                    class="picture-2 img-thumbnail  p-2  bg-transparent object-fit-cover">
+                            </div>
+                            <div class="picture-03 position-absolute">
+                                <img src="assets/img/images/right-down.png" alt="picture-3"
+                                    class="picture-3 bg-transparent object-fit-cover">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card border-0 bg-light ">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card border-0 bg-light mb-2">
+                                            <div class="card-body">
+                                                <p class="active text-card font-size-18 mt-5 mb-2"><i
+                                                        class="fa-solid fa-play fs-6"></i>
+                                                    About Us</p>
+                                                <h2 class="card-title fs-1 fw-bold mb-2">Your trusted partner in
+                                                    reliable
+                                                    car rental
+                                                </h2>
+                                                <p class="text-card text-secondary ">Aqestic Optio Amet A Ququam
+                                                    Saepe
+                                                    Aliquid Voluate Dicta Fuga Dolor Saerror Sed Earum A Magni Soluta
+                                                    Quam Minus
+                                                    Dolor Dolor</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card border-0 bg-light border-bottom">
+                                            <div class="card-body d-flex">
+                                                <img src="assets/img/images/png/booking.png" alt="p-1" class="w-book">
+                                                <div class="title">
+                                                    <h5>Convenient Pick-Up & Return Process</h5>
+                                                    <p class="text-card text-secondary mb-4">We Have Optimized The
+                                                        Booking Process So That Our Clients Can Experience The Easiest
+                                                        And The Safest Service</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card border-0 bg-light mb-4">
+                                            <div class="card-body d-flex">
+                                                <img src="assets/img/images/png/convenience.png" alt="p-1"
+                                                    class="w-book">
+                                                <div class="title">
+                                                    <h5>Easy Booking Process</h5>
+                                                    <p class="text-card text-secondary ">We Have Optimized The
+                                                        Booking
+                                                        Process So That Our Clients Can Experience The Easiest And The
+                                                        Safest
+                                                        Service</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="btn w-25 font-size-18 rounded-5  bg-btn text-white hover-btn"
+                                        href="#">Contact Us <i class="fa-solid fa-arrow-right fs-6"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-white pbb-5 pb-5 ">
+            <div class="container-fluid ">
+                <div class="text-center ">
+                    <p class="active text-card font-size-18 mb-2"><i class="fa-solid fa-play fs-6"></i>
+                        Type Of Vehicles</p>
+                    <h2 class="card-title fs-1 fw-bold mb-5">Choose from These Vehicle <br> Categories
+                    </h2>
+                </div>
+                <div class="row g-5">
+                    <div class="col-4">
+                        <div class="card border-0 position-relative bg-transparent hover rounded-5 ">
+                            <img src="assets/img/images/cover-categories/motorcycle.jpg" alt="p-2"
+                                class="rounded-5 object-fit-contain width-hight-cover-1 ">
+                            <div class="width-hight-cover position-absolute rounded-5 border-0"></div>
+                            <div class="card-body ">
+                                <div class="title position-absolute ">
+                                    <h3 class="fw-bold text-white">MOTORBILE</h3>
+                                </div>
+                                <div class="botton">
+                                    <button class="key rounded-circle bg-transparent mt-5 position-absolute">
+                                        <a href="#" class="text-white">
+                                            <i class="fa-solid  fa-arrow-right "></i>
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card border-0 position-relative bg-transparent hover rounded-5 ">
+                            <img src="assets/img/images/cover-categories/car.jpg" alt="p-2"
+                                class="rounded-5 object-fit-contain width-hight-cover-1 ">
+                            <div class="width-hight-cover position-absolute rounded-5 border-0"></div>
+                            <div class="card-body ">
+                                <div class="title position-absolute ">
+                                    <h3 class="fw-bold text-white">CAR</h3>
+                                </div>
+                                <div class="botton">
+                                    <button class="key rounded-circle bg-transparent mt-5 position-absolute">
+                                        <a href="#" class="text-white">
+                                            <i class="fa-solid  fa-arrow-right "></i>
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card border-0 position-relative bg-transparent hover rounded-5 ">
+                            <img src="assets/img/images/cover-categories/volkswagen.jpg" alt="p-2"
+                                class="rounded-5 object-fit-contain width-hight-cover-1 ">
+                            <div class="width-hight-cover position-absolute rounded-5 border-0"></div>
+                            <div class="card-body ">
+                                <div class="title position-absolute ">
+                                    <h3 class="fw-bold text-white">VAN</h3>
+                                </div>
+                                <div class="botton">
+                                    <button class="key rounded-circle bg-transparent mt-5 position-absolute">
+                                        <a href="#" class="text-white">
+                                            <i class="fa-solid  fa-arrow-right "></i>
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-light pbb-5 p-bottom">
+            <div class="container-fluid ">
+                <div class="text-center pbb-5 pt-0">
+                    <p class="active text-card font-size-18 mb-2"><i class="fa-solid fa-play fs-6"></i>
+                        Popular Vehicles</p>
+                    <h2 class="card-title fs-1 fw-bold mb-5">Explore our perfect and <br> extensive fleet</h2>
+                </div>
+                <div class="sliz-car mt-5">
+                    <div class="swiper mySwiper text-center">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide bg-transparent">
+                                <div class="card sliz-car-1 border-light-subtle rounded-5 bg-transparent">
+                                    <img src="assets/img/images/popular/Breeze-Compact.png" alt="p-car_sliz1">
+                                    <div class="card-body p-4">
+                                        <div class="text d-flex ">
+                                            <p class="fw-medium bg-secondary-subtle rounded-5 px-2">couper car</p>
+                                            <p class="fw-medium bg-secondary-subtle rounded-5 px-1 ms-1 ">1/7 cars</p>
+                                        </div>
+                                        <h5 class="text-start">Herrier Wagon</h5>
+                                        <div class="d-flex">
+                                            <img src="assets/img/images/svg/icon-door.svg" alt="icon-1"
+                                                class="icon-car me-2">
+                                            <div class="d-flex justify-content-between w-100">
+                                                <p class="">Doors</p>
+                                                <p class="">4</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="assets/img/images/svg/icon-passengers.svg" alt="icon-1"
+                                                class="icon-car me-2">
+                                            <div class="d-flex justify-content-between w-100">
+                                                <p class="">Passengers</p>
+                                                <p class="">2</p>
+                                            </div>
+                                        </div>
+                                        <div class="border-top position-relative ">
+                                            <div class="d-flex mt-4">
+                                                <h3 class="fw-bold d-flex">$169 </h3>
+                                                <p class="fw-normal fs-6 mt-2">/per day</p>
+                                            </div>
+                                            <button class="key-car rounded-circle  position-absolute">
+                                                <a href="#" class="text-white">
+                                                    <i class="fa-solid  fa-arrow-right "></i>
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-transparent">
+                                <div class="card sliz-car-1 border-light-subtle rounded-5 bg-transparent">
+                                    <img src="assets/img/images/popular/Harrier-Wagon.png" alt="p-car_sliz1">
+                                    <div class="card-body p-4">
+                                        <div class="text d-flex ">
+                                            <p class="fw-medium bg-secondary-subtle rounded-5 px-2">couper car</p>
+                                            <p class="fw-medium bg-secondary-subtle rounded-5 px-2 ms-1 ">2/10 cars</p>
+                                        </div>
+                                        <h5 class="text-start">Herrier Wagon</h5>
+                                        <div class="d-flex">
+                                            <img src="assets/img/images/svg/icon-door.svg" alt="icon-1"
+                                                class="icon-car me-2">
+                                            <div class="d-flex justify-content-between w-100">
+                                                <p class="">Doors</p>
+                                                <p class="">4</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="assets/img/images/svg/icon-passengers.svg" alt="icon-1"
+                                                class="icon-car me-2">
+                                            <div class="d-flex justify-content-between w-100">
+                                                <p class="">Passengers</p>
+                                                <p class="">2</p>
+                                            </div>
+                                        </div>
+                                        <div class="border-top position-relative ">
+                                            <div class="d-flex mt-4">
+                                                <h3 class="fw-bold d-flex">$169 </h3>
+                                                <p class="fw-normal fs-6 mt-2">/per day</p>
+                                            </div>
+                                            <button class="key-car rounded-circle  position-absolute">
+                                                <a href="#" class="text-white">
+                                                    <i class="fa-solid  fa-arrow-right "></i>
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-transparent">
+                                <div class="card sliz-car-1 border-light-subtle rounded-5 bg-transparent">
+                                    <img src="assets/img/images/popular/Sapphire-Convertible.png" alt="p-car_sliz1">
+                                    <div class="card-body p-4">
+                                        <div class="text d-flex ">
+                                            <p class="fw-medium bg-secondary-subtle rounded-5 px-2">couper car</p>
+                                            <p class="fw-medium bg-secondary-subtle rounded-5 px-2 ms-1 ">7/12 cars</p>
+                                        </div>
+                                        <h5 class="text-start">Herrier Wagon</h5>
+                                        <div class="d-flex">
+                                            <img src="assets/img/images/svg/icon-door.svg" alt="icon-1"
+                                                class="icon-car me-2">
+                                            <div class="d-flex justify-content-between w-100">
+                                                <p class="">Doors</p>
+                                                <p class="">4</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="assets/img/images/svg/icon-passengers.svg" alt="icon-1"
+                                                class="icon-car me-2">
+                                            <div class="d-flex justify-content-between w-100">
+                                                <p class="">Passengers</p>
+                                                <p class="">2</p>
+                                            </div>
+                                        </div>
+                                        <div class="border-top position-relative ">
+                                            <div class="d-flex mt-4">
+                                                <h3 class="fw-bold d-flex">$169 </h3>
+                                                <p class="fw-normal fs-6 mt-2">/per day</p>
+                                            </div>
+                                            <button class="key-car rounded-circle  position-absolute">
+                                                <a href="#" class="text-white">
+                                                    <i class="fa-solid  fa-arrow-right "></i>
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-transparent">
+                                <div class="card sliz-car-1 border-light-subtle rounded-5 bg-transparent">
+                                    <img src="assets/img/images/popular/Viper-SXT.png" alt="p-car_sliz1">
+                                    <div class="card-body p-4">
+                                        <div class="text d-flex ">
+                                            <p class="fw-medium bg-secondary-subtle rounded-5 px-2">couper car</p>
+                                            <p class="fw-medium bg-secondary-subtle rounded-5 px-2 ms-1 ">2/20 cars</p>
+                                        </div>
+                                        <h5 class="text-start">Herrier Wagon</h5>
+                                        <div class="d-flex">
+                                            <img src="assets/img/images/svg/icon-door.svg" alt="icon-1"
+                                                class="icon-car me-2">
+                                            <div class="d-flex justify-content-between w-100">
+                                                <p class="">Doors</p>
+                                                <p class="">4</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="assets/img/images/svg/icon-passengers.svg" alt="icon-1"
+                                                class="icon-car me-2">
+                                            <div class="d-flex justify-content-between w-100">
+                                                <p class="">Passengers</p>
+                                                <p class="">2</p>
+                                            </div>
+                                        </div>
+                                        <div class="border-top position-relative ">
+                                            <div class="d-flex mt-4">
+                                                <h3 class="fw-bold d-flex">$169 </h3>
+                                                <p class="fw-normal fs-6 mt-2">/per day</p>
+                                            </div>
+                                            <button class="key-car rounded-circle  position-absolute">
+                                                <a href="#" class="text-white">
+                                                    <i class="fa-solid  fa-arrow-right "></i>
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-transparent">
+                                <div class="card sliz-car-1 border-light-subtle rounded-5 bg-transparent">
+                                    <img src="assets/img/images/popular/Voyager-GT.png" alt="p-car_sliz1">
+                                    <div class="card-body p-4">
+                                        <div class="text d-flex ">
+                                            <p class="fw-medium bg-secondary-subtle rounded-5 px-2">couper car</p>
+                                            <p class="fw-medium bg-secondary-subtle rounded-5 px-2 ms-1 ">1/15 cars</p>
+                                        </div>
+                                        <h5 class="text-start">Herrier Wagon</h5>
+                                        <div class="d-flex">
+                                            <img src="assets/img/images/svg/icon-door.svg" alt="icon-1"
+                                                class="icon-car me-2">
+                                            <div class="d-flex justify-content-between w-100">
+                                                <p class="">Doors</p>
+                                                <p class="">4</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="assets/img/images/svg/icon-passengers.svg" alt="icon-1"
+                                                class="icon-car me-2">
+                                            <div class="d-flex justify-content-between w-100">
+                                                <p class="">Passengers</p>
+                                                <p class="">2</p>
+                                            </div>
+                                        </div>
+                                        <div class="border-top position-relative ">
+                                            <div class="d-flex mt-4">
+                                                <h3 class="fw-bold d-flex">$169 </h3>
+                                                <p class="fw-normal fs-6 mt-2">/per day</p>
+                                            </div>
+                                            <button class="key-car rounded-circle  position-absolute">
+                                                <a href="#" class="text-white">
+                                                    <i class="fa-solid  fa-arrow-right "></i>
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-transparent">
+                                <div class="card sliz-car-1 border-light-subtle rounded-5 bg-transparent">
+                                    <img src="assets/img/images/popular/Voyager-Hybrid.png" alt="p-car_sliz1">
+                                    <div class="card-body p-4">
+                                        <div class="text d-flex ">
+                                            <p class="fw-medium bg-secondary-subtle rounded-5 px-2">couper car</p>
+                                            <p class="fw-medium bg-secondary-subtle rounded-5 px-2 ms-1 ">2/4 cars</p>
+                                        </div>
+                                        <h5 class="text-start">Herrier Wagon</h5>
+                                        <div class="d-flex">
+                                            <img src="assets/img/images/svg/icon-door.svg" alt="icon-1"
+                                                class="icon-car me-2">
+                                            <div class="d-flex justify-content-between w-100">
+                                                <p class="">Doors</p>
+                                                <p class="">4</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="assets/img/images/svg/icon-passengers.svg" alt="icon-1"
+                                                class="icon-car me-2">
+                                            <div class="d-flex justify-content-between w-100">
+                                                <p class="">Passengers</p>
+                                                <p class="">2</p>
+                                            </div>
+                                        </div>
+                                        <div class="border-top position-relative ">
+                                            <div class="d-flex mt-4">
+                                                <h3 class="fw-bold d-flex">$169 </h3>
+                                                <p class="fw-normal fs-6 mt-2">/per day</p>
+                                            </div>
+                                            <button class="key-car rounded-circle  position-absolute">
+                                                <a href="#" class="text-white">
+                                                    <i class="fa-solid  fa-arrow-right "></i>
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <div class="icon-g  btn-left rounded-circle  me-3">
+                                <div class=" fa-solid icon-p fa-arrow-left fs-5"></div>
+                            </div>
+                            <div class="icon-g  btn-right rounded-circle  ms-3">
+                                <div class=" fa-solid icon-p fa-arrow-right fs-5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="assets/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".btn-right",
+                prevEl: ".btn-left",
+            },
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+            }
+        });
+    </script>
 </body>
 
 </html>
